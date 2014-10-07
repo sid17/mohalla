@@ -1,0 +1,21 @@
+#include <stdio.h>
+int  main()
+{
+int n;
+int arr[]
+scanf("%d",&n);
+solve(n,n,n);
+return 0;
+}
+void solve(int n ,int m,int c)
+{
+	if (n>m)
+	{
+	solve(n-1,m);
+	printf("{");
+	if (n==m && n==c)
+	printf("{");
+	solve(n,m-1);
+	printf("}");
+	}
+}

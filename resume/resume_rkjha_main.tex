@@ -1,0 +1,284 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage[usenames]{color}
+\usepackage{enumitem}
+\usepackage{nopageno}
+
+\renewcommand{\arraystretch}{1.5}
+\setlist{nolistsep}
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.75in
+\textheight=10.50in
+
+\raggedright
+\pagestyle{empty}
+%\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.10in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.75in}{-0.75in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\name}[1]{
+	\begin{changemargin}{-0.6in}{-0.6in}
+		\begin{center}
+			{\Large \scshape {#1}}
+		\end{center}
+	\end{changemargin}
+}
+
+\newcommand{\contact}[6]{
+	\begin{changemargin}{-0.65in}{-0.65in}
+		\begin{multicols}{2}
+			{#1}\\ \smallskip 
+			{#2}\\ \smallskip
+			{#3}\\ \smallskip
+			{#4}\\ \smallskip 
+			{#5}\\ \smallskip
+			{#6}
+		\end{multicols}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.6in}{-0.65in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\name{Rohit Kumar Jha}
+
+\contact{Junior Undergraduate}{Department of Computer Science and Engineering}{Indian Institute of Technology, Kanpur}{\hspace{60pt} \url{http://home.iitk.ac.in/~rkjha}}{\hspace{60pt} \textbf{Email:} rkjha.iitk@gmail.com}{\hspace{60pt} \textbf{Phone No.:} +91-8005451623}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\vspace{6pt}
+	\begin{tabular}{ | l | l | l | l | }
+	\hline	
+	\textbf{Year} & \textbf{Degree/Certificate} & \textbf{Institute} & \textbf{CGPA/Percentage} \\ \hline
+	2015 (expected) & B.Tech. & Indian Institute of Technology, Kanpur & 9.6/10 (4 semesters) \\ \hline
+	2011 & AISSCE, XII (CBSE) & Delhi Public School, Bokaro Steel City & 92.2\% \\ \hline
+	2009 & AISSE, X (CBSE) & Rose Public School, Darbhanga & 96.2\% \\ \hline
+	\end{tabular}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Interests
+\header{Areas of Interest}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize}
+		\item{\textbf{Algorithms}}
+		\item{\textbf{Machine Learning}}
+		\item{\textbf{Natural Language Processing}}
+	\end{itemize}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic Achievements
+\header{Scholastic Achievements}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize}
+	\item{Awarded \textbf{Gold Medal} for being \textbf{Regional Topper} in \textbf{Regional Mathematical Olympiad (RMO)} 2010 organised by \emph{Homi Bhabha Centre for Science Education}}
+	\item{Secured \textbf{All India Rank(AIR) 122} in \textbf{IIT-JEE 2011} out of around \textbf{0.5 million students}}
+	\item{Secured \textbf{All India Rank(AIR) 82} in \textbf{AIEEE 2011} out of around \textbf{1.1 million students}}
+	\item{Received \textbf{Academic Excellence Award} that is awarded to \textbf{top 7\% students} in Academic Year 2011-12}
+	\item{Recipient of \textbf{Summer Undergraduate Research Grant for Excellence (SURGE) 2013}, granted by \emph{Dean Resource Planning and Generation}, IIT Kanpur}
+	\item{Secured \textbf{International Rank - 39} in \textbf{4th International Mathematics Olympiad} organised by \emph{Science Olympiad Foundation(SOF)}}
+	\item{Secured \textbf{All India Rank(AIR) - 47} in \textbf{11th National Science Olympiad(NSO)} organised by \emph{Science Olympiad Foundation(SOF)}}
+	\item{Secured \textbf{All India Rank(AIR) - 12} in \textbf{National Science Talent Search Examination(NSTSE) 2011}}
+	\end{itemize}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Major Projects and Works
+\header{Major Projects}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Implementation of Integer Multiplication} \hfill \emph{Summers '13}\\
+	\emph{Research Project under SURGE program under the mentorship of Prof. Piyush P. Kurur}
+	\begin{itemize}
+		\item{Implemented \textbf{Integer Multiplication Algorithms based on Fast Fourier Transformation} especially for 1000 to 10000 bit multiplications due to wide application of 1024, 2048 and 4096 bit multiplications in Cryptanalysis}
+		\item{Achieved around \textbf{two times faster running time than the existing GMP Implementation}}
+		\item{Planning to get it included in GMP Library}
+	\end{itemize}
+	\smallskip
+	\textbf{Study of Graph Algorithms} \hfill \emph{January '13 till now}\\
+	\emph{Research Project under Prof. Surender Baswana}
+	\begin{itemize}
+		\item{Designed some \textbf{promising ideas} for \textbf{Decremental Maintenance of DFS Tree in Directed Acyclic Graphs} and currently working on them}
+		\item{Surveyed the existing literature on \textbf{Incremental Maintenance of All Pairs Reachability in Directed Acyclic Graphs}}
+		\item{Studied efficient algorithms for \textbf{Incremental Maintenance of Topological Ordering in Directed Acyclic Graphs} and \textbf{Incremental Maintenance of DFS Tree in Directed and Undirected Graphs}}
+	\end{itemize}
+	\smallskip
+	\textbf{VANI - Institute Wiki for IIT Kanpur} \hfill \emph{May '12 to October '12}\\
+	\emph{Supported by Dean, Resource Planning and Generation and Student's Gymkhana, IIT Kanpur}
+	\begin{itemize}
+		\item{Worked in a team of around 10 to develop an \textbf{open-to-edit wiki built using Drupal CMS} for IIT Kanpur residents where all archival and other important campus information will be available to them}
+		\item{Extended to other features like \textbf{Student and Faculty Search},  \textbf{Lost and Found Portal}}
+		\item{Included a \textbf{Forum for discussion} with each person getting a platform to opine his/her views by means of a minimalistic profile}
+	\end{itemize}
+	\smallskip
+	\textbf{Hit Me - 3D Game Integrating Windows Phone with Microsoft Kinect} \hfill \emph{March '13 to Apr '13}\\
+	\emph{Independent Project}\\
+	\begin{itemize}
+		\item{Created a 3D game, similar to Temple Run, which more than one player can play}
+		\item{\textbf{Integrated Windows Phone and Microsoft Kinect} for a better gaming experience, allowing anyone with a Windows Phone to connect to the game in real time and create obstacles}
+		\item{Won \textbf{first position in Softkriti, Techkriti '13}}
+		\item{Among \textbf{top 7 teams in Code.Fun.Do organised by Microsoft} and advanced to the \textbf{National Round}}
+	\end{itemize}
+	\smallskip
+	\textbf{8-bit General Purpose Computer} \hfill \emph{March '13 to April '13}\\
+	\emph{CS220 Course Project under the guidance of Prof. Subhajit Roy}
+	\begin{itemize}
+		\item{Implemented a \textbf{8-bit General Purpose Computer on FPGA board} having \textbf{load-store architecture} using Verilog HDL}
+		\item{Implemented \textbf{Recursive function calls} and the General Purpose Computer could run programs such as finding factorial of any given number n, finding the sum upto n numbers, finding the nth Fibonacci number and display blinking LED}
+		\item{Implemented an \textbf{Interpreted and Compiler} for the programs to be run on this General Purpose Computer}
+		\item{Chosen as \textbf{one of the best projects} in the course}
+	\end{itemize}
+	\smallskip
+	\textbf{eC - Higher Level Language for C Language} \hfill \emph{May '12 to June '12}\\
+	\emph{Under Programming Club, IIT Kanpur}
+	\begin{itemize}
+		\item{Designed a much \textbf{easy-to-code-in language}, along with its interpreter, to produce its equivalent C code}
+		\item{Provides a \textbf{huge relaxation in terms of syntax} and provides \textbf{functions for most common tasks}}
+		\item{\textbf{Takes care of the common syntax errors} that tend to creep in}
+	\end{itemize}
+	\smallskip
+	\textbf{Cloud Pad} \hfill \emph{Summers '12}\\
+	\emph{Under Electronics Club, IIT Kanpur}
+	\begin{itemize}
+		\item{Developed a \textbf{GUI for PandaBoard} containing a game, bluetooth application and a music and video player}
+		\item{Game contains a \textbf{Multiplayer LAN Game and a Cloud-based Game} for PandaBoard}
+		\item{Bluetooth Application allows \textbf{Realtime Maintenance and Access of Information on PandaBoard} using Bluetooth with Information residing at Remote Server}
+	\end{itemize}
+	\smallskip
+	\textbf{Hexapod} \hfill \emph{Summers '12}\\
+	\emph{Under Robotics Club, IIT Kanpur}
+	\begin{itemize}
+		\item{Built a six-legged desktop sized Hexapod, with three degrees of freedom in each leg and independent control over each leg}
+		\item{Excellent design and walking mechanism renders stability in spite of reasonable weight}
+		\item{Can perform all kinds of rotation with great precisions, and can walk in all directions}
+	\end{itemize}
+	\smallskip
+	\textbf{Table Tennis Game} \hfill \emph{April '13}\\
+	\emph{CS252 Course Project under the guidance of Prof. Arnab Bhattacharya}\\
+	\smallskip
+	\begin{itemize}
+		\item{Created a 2D Table Tennis Game in Python, both for two player and with an AI, containing sound effects and other features using PyGame module}
+	\end{itemize}
+	\smallskip
+	\textbf{Snake Game} \hfill \emph{November '11}\\
+	\emph{ESC101 Course Project under the guidance of Prof. Piyush P. Kurur}\\
+	\begin{itemize}
+		\item{Created a Snake Game in Python with some innovative and interesting features using PyGame module}
+		\item{Got \textbf{A* in the course based on the project work} and for being in top 1\% in the course}
+	\end{itemize}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Relevant Courses
+\header{Relevant Courses (*Ongoing)}
+
+\begin{body}
+	\vspace{4pt}
+	\begin{multicols}{2}
+	Fundamentals of Computing\\
+	Mathematics I (Basic Calculus)\\	
+	Mathematics II (Linear Algebra)\\
+	Data Structures and Algorithms\\ 
+	Computer Organization\\
+	Mathematics for Computer Science I\\	
+	Mathematics for Computer Science II\\	
+	Mathematics for Computer Science III\\	
+	Computing Lab I\\
+	Computing Lab II\\
+	Probability and Statistics\\
+	Introduction to Logic\\
+	*Randomized Algorithms\\
+	*Natural Language Processing\\
+	*Operating Systems\\
+	*Theory of Computation\\
+	*Modern Cryptology
+	
+	\end{multicols}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Computer Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Languages (Proficient in):}}{} C, C++, Python\\
+	\emph{\textbf{Languages (Familiar with):}}{} C\#, Java, Javascript, PHP, \\
+	\emph{\textbf{Other Tools/Languages:}}{}  \LaTeX , HTML, CSS, Octave, Unity 3D, Bash Shell Scripting, Drupal(CMS), Git, MIPS Assembly Language, Verilog\\
+	\emph{\textbf{Platforms:}}{} Windows, Linux, Windows Phone, Android
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Other Achievements
+\header{Other Achievements}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize}
+		\item{Won \textbf{AI Challenge} organized by \textbf{HackerRank} for IIT Kanpur Students}
+		\item{Achieved \textbf{1st Position} in \textbf{FPGA Contest} at \textbf{Techkriti}, \emph{the Annual Tech Festival of IIT Kanpur}}
+		\item{Achieved \textbf{1st Position} in \textbf{Softkriti}, the \emph{Software Innovation Challenge}, at \textbf{Techkriti}, the \emph{Annual Tech Festival of IIT Kanpur}}
+		\item{Advanced to Second Round, \textbf{the National Round}, of \textbf{Code.Fun.Do 2013} organised by \textbf{Microsoft}}
+		\item{Received \textbf{Hacker's Choice Award} in \textbf{Yahoo HackU 2012}}
+	\end{itemize}
+\end{body}
+
+\end{document}
