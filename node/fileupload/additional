@@ -1,0 +1,7 @@
+url=http://localhost:8888/start?foo=bar&hello=world
+url.parse(string).pathname returns  /start
+url.parse(string).query returns the query strings 
+querystring(string)["foo"]
+querystring(string)["hello"]
+handling the get requests in node.js
+use url and querystring modules in node js

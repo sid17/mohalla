@@ -1,0 +1,449 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[]{amsmath}
+\usepackage{titlesec}
+
+\titleformat*{\subsection}{\large \scshape \fontfamily{palatino} }
+
+
+
+ 
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+
+% THIS IS MY NEWLY DEFINED COMMAND
+\newcommand\tline[2]{$\underset{\text{#1}}{\text{\underline{\hspace{#2}}}}$}
+
+
+% and the actual content starts here
+\begin{document}
+
+% \begin{center}
+% {\LARGE \textbf{John Q. Example}}
+
+% 151 E Wacker Drive\ \ \textbullet
+% \ \ Suite\ 1001\ \ \textbullet
+% \ \ Chicago, IL 60606
+% \\
+% (312) 555-1212\ \ \textbullet
+% \ \ test@example.com
+% \end{center}
+\vspace{-0.6em}
+\begin{flushright}
+
+   \huge \scshape \fontfamily{palatino} {
+   \tline{}{4.39in} Siddhant Manocha}
+
+\end{flushright}
+\vspace{-2.0em}
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r} % centered columns (4 columns)
+\emph{Third Year Undergraduate} & 
+\emph{Phone No.:+91-7752894588} \\
+\emph{Department of Computer Science and Engineering} & 
+\emph{Email: siddhantmanocha1994@gmail.com} \\
+\emph{Indian Institute of Technology, Kanpur} & 
+\emph{Homepage:home.iitk.ac.in/$\sim$smanocha} \\
+
+\end{tabular*}
+
+
+
+
+
+
+
+% \hrule
+\vspace{-1.0em}
+\subsection*{ Educational Qualifications \tline{}{4.8in}}
+\vspace{-0.9em}
+\begin{itemize}
+	% \parskip=0.1em
+\setlength{\itemsep}{3pt}
+	\item 
+	\headerrow
+		{\textbf{Indian Institute of Technology, Kanpur, India}}
+		{\textbf{CGPA: 9.9/10.0}}
+	\\
+	\headerrow
+		{\emph{B.Tech, Computer Science and Engineering, 2012 - Present}}
+		{}
+
+
+   \item 
+	\headerrow
+		{{Lawrence and Mayo Public School, Kota, India}}
+		{{Percentage : 96.2 \%}}
+	\\
+	\headerrow
+		{\emph{Senior School Certificate(CBSE), 2012}}
+		{}
+
+ \item 
+	\headerrow
+		{{St.Thomas College, Lucknow, India}}
+		{{Percentage : 95.8 \%}}
+	\\
+	\headerrow
+		{\emph{Secondary School Certificate(ICSE), 2010}}
+		{}
+
+	% \begin{itemize*}
+	% 	\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	% 	\item Mirum est notare quam littera gothica, quam nunc putamus parum
+	% 	claram.
+	% \end{itemize*}
+
+\end{itemize}
+
+
+
+% \hrule
+\vspace{-1.8em}
+\subsection*{Academic Achievements\tline{}{5.2in}}
+\vspace{-0.7em}
+\begin{itemize}
+	\parskip=0.1em
+
+	\item Ranked in \textbf{top 5 students in the institute} among 837 students
+
+	\item Secured \textbf{All India Rank 100} in IIT-JEE 2012 among 0.5 million candidates
+
+	\item Placed in \textbf{top 0.05\%} (amongst over 1 million students) in AIEEE 2012 with AIR 148
+
+	\item Awarded \textbf{Academic Excellence Award} (given to top 5\% students) for exceptional academic performance in
+2012-13
+
+	\item Received \textbf{Summer Undergraduate Research Grant for Excellence} (SURGE) 2014,granted by Dean, Resource Planning and Generation, IIT Kanpur.
+
+
+	\item Selected for Kishore Vigyan Protsahan Yojna (\textbf{KVPY}), 2012 given by Department of Science and Technology,
+Government of India
+
+	\item Awarded \textbf{Certificate of Appreciation by the Director, IIT Kanpur} for outstanding contribution in software
+development in Inter IIT Technical Meet held at IIT Bombay
+
+	\item Amongst top \textbf{1\% students} in NSEA, pre-final round in Indian National Astronomy Olympiad 2011-2012
+
+	
+
+\end{itemize}
+
+
+
+
+% \hrule
+\vspace{-1.8em}
+\subsection*{Work Experience\tline{}{5.74in}}
+\vspace{-0.7em}
+\begin{itemize}[label=$\ $]
+	\parskip=0.1em
+
+
+
+
+	\item
+	\headerrow
+		{\textbf{Vision Based Robot Motion Planning}}
+		{\emph{SURGE|May 2014-July 2014}}
+	\\
+	\headerrow
+		{\emph{Mentor: Dr .Amitabha Mukerjee, Department of Computer Science and Engineering, IIT Kanpur}}
+		{\emph{}}
+	\begin{itemize*}
+	\setlength{\itemsep}{3pt}
+		\item Formulated an algorithm to automate the motion and plan the trajectory of CRS Robotic arm using computer
+vision, image processing and Gaussian models
+		\item Implemented Gaussian Process Latent variable model and Gaussian process regression to figure out the
+mapping between joint angles of the robotic arm and corresponding images for various configurations
+for trajectory planning
+		\item Recovered the joint angles of the robotic arm from the corresponding images with about \textbf{99.5\% accuracy}
+and generated a smooth trajectory between unknown robot configurations with solution sufficiently close
+to ground truth solution
+		
+	\end{itemize*}
+
+
+\item
+	\headerrow
+		{\textbf{Automatic Commentary Generator}}
+		{\emph{Carnegie Mellon University's Winter School|December 2014-Present}}
+	\\
+	\headerrow
+		{\emph{Mentor: Dr.Bhiksha Raj, Carnegie Mellon University; Co-Mentor: Pulkit Agarwal, Phd, UC Berkeley}}
+		{\emph{}}
+	\begin{itemize*}
+	\setlength{\itemsep}{3pt}
+		\item Develop a system that can automatically generate commentary from the video of a tennis match
+		\item Modeled the problem into recognizing objects(players), recognizing actions, obtaining ball trajectory and analyzing sound for extracting key information regarding the video content
+		\item Utilised Regions with Convoluted Neural Networks(RCNN) approach for object Detection, Histogram of Optical Flow(HOF) as motion based features for action recognition and Optical Flow for ball tracking
+		\item Awarded one of the \textbf{best project} at Carnegie Mellon University's Winter School held at National Institute of Technology, Karnataka
+		
+		
+	\end{itemize*}
+\hspace{0.01in}
+
+\item
+	\headerrow
+		{\textbf{Nachos}}
+		{\emph{Course Project|July 2014-Nov 2014}}
+	\\
+	\headerrow
+		{\emph{Mentor: Prof .Mainak Chaudhari, Department of Computer Science and Engineering, IIT Kanpur}}
+		{\emph{}}
+	\begin{itemize*}
+	\setlength{\itemsep}{3pt}
+		
+
+		\item Implemented system calls pertaining to Fork, Exec, Join, Yield, Sleep and Exit for Nachos
+		\item Programmed process scheduling algorithms including First in First Out, Round Robin, Shortest Job First and UNIX Scheduling and analysed their relative performance
+		\item  Implemented page replacement algorithms including First in First Out, Least Recently Used(LRU) and LRU Clock and Random Page Allocation and evaluated their performance in different scenarios
+		
+		
+	\end{itemize*}
+
+\item
+	\headerrow
+		{\textbf{Cloud Based File Hosting Service }}
+		{\emph{Computing Laboratory|July 2014-Nov 2014}}
+	\\
+	\headerrow
+		{\emph{Mentor: Dr. Arnab Bhattacharya, Department of Computer Science and Engineering, IIT Kanpur}}
+		{\emph{}}
+	\begin{itemize*}
+	\setlength{\itemsep}{3pt}
+		\item Designed a file hosting service with a web interface and a python based linux desktop client that offered cloud storage, online editing, file sharing and file synchronization
+		\item Developed the web platform to enable users to upload, edit and share files and desktop client to automatically sync files between the local machine and the cloud
+		\item Implemented a peer-to-peer protocol for video, audio and text transfer in Node.js to enable users to communicate and collaborate via the web interface
+		
+		
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{City Watch, Crowd Source Android Application}}
+		{\emph{Android Application | December 2013}}
+	
+	
+	\begin{itemize*}
+	\setlength{\itemsep}{3pt}
+		\item Conceptualized a crowd source solution to address local infrastructural issues in the city and report
+problems to the municipal government for immediate consideration
+		\item Developed an Android Application using web standards(HTML,CSS,JavaScript,PHP) through Intel XDK
+framework
+\item Awarded \textbf{2nd prize} in Software Development \textbf{amongst 20 teams at Inter IIT Technical Meet }held at IIT
+Bombay
+		
+		
+	\end{itemize*}
+
+
+
+\item
+	\headerrow
+		{\textbf{My Impress, Cloud Based Presentation Software}}
+		{\emph{Web Application | May 2013-June 2013}}
+	
+	
+	\begin{itemize*}
+	\setlength{\itemsep}{3pt}
+		\item Designed an online platform to create presentations with cloud support and improved presentation tran-
+sition effects
+		\item Utilized Impress.js framework and Web standards(JavaScript,PHP,MYSQL)to construct an editing and
+hosting platform
+\item Devised a user interface for Impress.js presentations that provided a powerful tool to add 3-D scale, zoom
+and rotate features which distinguished them from standard PowerPoint presentations
+		
+		
+	\end{itemize*}
+	
+	
+% \item
+% \headerrow
+% 		{\textbf{Short Term Projects}}
+% 		{\emph{}}
+% 		\begin{itemize*}
+% \setlength{\itemsep}{7pt}
+% 		\item
+% 	\headerrow
+% 		{{Comment Magic, Facebook Application}}
+% 		{\emph{September, 2013}}
+% 		\begin{itemize}[label={-}]
+% 	\setlength{\itemsep}{3pt}
+% 		\item Programmed a Facebook Application that enabled users to search for posts through their wall, their
+% friend’s timeline and user groups and allowed them to post same comment on multiple posts
+% \item Won \textbf{1st prize} in Web-Development event \textbf{amongst 20 teams in Takneek}, Inter Hall Technical Fest of
+% IIT Kanpur
+		
+		
+% 	\end{itemize}
+
+% \item
+% 	\headerrow
+% 		{{Learning Wagon, Web Application}}
+% 		{\emph{March, 2014}}
+% 		\begin{itemize}[label={-}]
+% 	\setlength{\itemsep}{3pt}
+% 		\item Devised a featured English pronunciation web app that comprised of an interface for English Hindi
+% translation with images and pronunciations of words and facilitated them to improve their pronun-
+% ciation
+% \item Secured \textbf{2nd position} in the El Eduvate event \textbf{amongst 30 teams in Techkriti}, Annual technical
+% festival of IIT Kanpur
+		
+		
+% 	\end{itemize}
+
+% \item
+% 		\headerrow
+% 		{{Picachu, Facebook Application}}
+% 		{\emph{March, 2014}}
+% 		\begin{itemize}[label={-}]
+% 	\setlength{\itemsep}{3pt}
+% 		\item Developed the app Picachu in Yahoo Hack-U that comprised of Google chrome plugin and facebook
+% application to facilitate the users to edit photos (via HTML 5) online and post them directly as
+% facebook comments
+ 
+		
+		
+	% \end{itemize}
+
+	% \end{itemize*}
+	
+	
+
+\end{itemize}
+
+
+% \hrule
+
+
+
+
+
+% \hrule
+\vspace{-1.8em}
+\subsection*{Technical Skills \textbf{ \tline{}{5.70in}}}
+\vspace{-0.75em}
+\begin{itemize}
+	\setlength{\itemsep}{3pt}
+		\item Programming languages: C, C ++ , Perl, Bash, HTML, JavaScript, CSS, PHP, MYSQL, Python
+
+\item Platforms/Tools: Windows, Linux, Octave, GNU Plot, Latex, Matlab, Socket Programming
+		
+		
+	\end{itemize}
+
+% \hrule
+
+
+\vspace{-1.8em}
+
+\subsection*{Relevant Courses\tline{}{5.70in}}
+\vspace{-0.75em}
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} ll} % centered columns (4 columns)
+Machine Learning Techniques* & 
+Artificial Intelligence* & 
+Data Structures and Algorithms  \\
+Linear Algebra & 
+Principles of Databases* & 
+Computer Networks \\
+Operating Systems &  
+Compiler Design* & 
+Probability and Statistics \\
+% Computer Organization & 
+%  & 
+% Computing Laboratory \\
+ 
+
+\end{tabular*}
+{\raggedleft{}\emph{*: ongoing} \\}
+
+
+
+\vspace{-1.8em}
+\subsection*{Positions of Responsibility\tline{}{5.15in}}
+\vspace{-0.75em}
+\begin{itemize}
+	\setlength{\itemsep}{3pt}
+
+	\item 
+	\headerrow
+		{\textbf{Secretary, Programming Club, IIT Kanpur}}
+		{\emph{June 2013-April 2014}}
+		\vspace{0.1em}
+	Organized lectures at the hall level , promoted participation in programming events and mentored juniors in
+Summer Project
+
+   \item 
+	\headerrow
+		{\textbf{Academic Mentor, Counseling Service, IIT Kanpur}}
+		{\emph{April 2013-June 2014}}
+		\vspace{-0.4em}
+	Provided academic assistance to students from junior batches in Fundamentals of Computing (ESC 101)
+	% \begin{itemize*}
+	% 	\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+	% 	\item Mirum est notare quam littera gothica, quam nunc putamus parum
+	% 	claram.
+	% \end{itemize*}
+
+\end{itemize}
+
+
+
+% \hrule
+\vspace{-1.8em}
+\subsection*{Extra-Curricular\tline{}{5.65in}}
+\vspace{-0.75em}
+
+\begin{itemize}
+	\setlength{\itemsep}{3pt}
+		\item Secured \textbf{2nd position} in BattleCity, an AI strategy game event, and El Eduvate, a web development event held at Techkriti(2014), annual technical festival of IIT Kanpur
+\item Awarded Certificate of Appreciation for outstanding project as a part of Manufacturing Process course for
+fabricating Mechanical Odometer
+		
+		
+	\end{itemize}
+
+
+
+\end{document}

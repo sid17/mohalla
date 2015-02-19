@@ -1,0 +1,128 @@
+%
+% This is the LATEX document of my original Statement of Purpose
+% of my 6 month visiting program in Japan
+\documentclass[journal]{IEEEtran}
+\ifCLASSINFOpdf
+\else
+\fi
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+\title{STATEMENT of PURPOSE}
+\author{Rhiza~S.~Sadjad}
+\thanks{Rhiza S. Sadjad is with the Control Systems and Instrumentation Laboratory, 
+Department of Electrical Engineering, Faculty of Engineering, Hasanuddin University, 
+MAKASSAR Indonesia 90245
+e-mail: rhiza@unhas.ac.id, URL: http://www.unhas.ac.id/rhiza/.}
+% The paper headers
+\markboth{Statement of Purpose}
+\maketitle
+\section{Introduction}
+\IEEEPARstart{I}{n} relation to the Hasanuddin University's New Engineering Campus Development Project (JICA Loan No. IP-541), a research fellowship program has been offered to interested faculty members, arranged in a 6 (six) month visit to a university in Japan. This program is intended to enhance the concept of Laboratory-based Education (LBE) that is planned to be implemented at the new campus. This paper is to describe my plan to participate in the program next year, approximately in early 2012.
+\section{Background}
+\IEEEPARstart{I} was the chairman of the department in 2003 when I received a feedback from my former student who worked at an oil refinery plant. He told me that the control systems he dealt with in his daily work were very different from the control systems he learned during his study in the Department of Electrical Engineering at our university. It was really a surprise for me because to the best of my knowledge at that time, our curriculum was designed to conform with the international standard, and the syllabii for all Control Systems courses were derived from standard textbooks for Electrical Engineering. After  a quick  investigation, I realized that our former students who worked at physical plants of manufacturing companies were positioned more or less as process control engineers, rather than as electrical or electronic engineers. In fact, until now, our university - which is the largest and the oldest university in the eastern region of Indonesia - has no Department of Chemical Engineering nor Department of Engineering Physics that would have graduated process control engineers. Nevertheless, the surrounding industrial world in the eastern region of Indonesia, where our university is located, has positioned our electrical engineering graduates at the process control engineers' positions. Realizing this fact, I took an initiative to accommodate the subject of Process Control Systems and Technology in our Electrical Engineering curriculum, and became one of the features of our study program, both in our undergraduate as well as our graduate programs.
+\IEEEPARstart{A} couple of years ago I started to supervise a Ph.D. candidate to conduct a research project on the development of the miniature of a process control plant for solid materials [1]. The project was completed in 2010 and the mini-plant is now installed at our laboratory (see Figure 1). Several undergraduate final projects and Masters' thesis were produced based on this Ph.D. project. I strongly believe that the field of research in the process control technology will open a wide opportunity for our department in its future new engineering campus. 
+\IEEEPARstart{I}{n} 2004 our laboratory proposed to develop a large Process Control Training System consisting of several mini-plants originally created by Syntek Group, a process control specialist from Malaysia. The main goal of the development was to build an industrial training center on campus. We were very certain that such an industrial training center would open the gate to the collaboration between the academic world and the real industrial world. A set of boiler drum for temperature control is currently in the procurement process, funded by a central government's agency: the  Ministry of Energy and Mineral Resources. Another set of air pressure and temperature control will be purchased through the Hasanuddin University's New Engineering Campus Development Project (JICA Loan No. IP-541) Package 2.
+
+
+\appendices
+\section{Proof of the First Zonklar Equation}
+Appendix one text goes here.
+
+% you can choose not to have a title for an appendix
+% if you want by leaving the argument blank
+\section{}
+Appendix two text goes here.
+
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+
+
+The authors would like to thank...
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\end{thebibliography}
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}{Michael Shell}
+Biography text here.
+\end{IEEEbiography}
+
+% if you will not have a photo at all:
+\begin{IEEEbiographynophoto}{John Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiographynophoto}{Jane Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+
+
+% that's all folks
+\end{document}
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.24)  27 SEP 2014 15:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.24)  28 NOV 2014 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -636,15 +636,15 @@ File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `T1/palatino/b/sc' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 327.
+(Font)              using `T1/cmr/m/n' instead on input line 348.
 
 
-Overfull \hbox (0.20067pt too wide) in paragraph at lines 343--343
+Overfull \hbox (0.20067pt too wide) in paragraph at lines 364--364
 |\T1/qpl/m/sc/12 Relevant Courses$[]$| 
  []
 
 
-Overfull \hbox (7.07191pt too wide) in paragraph at lines 366--366
+Overfull \hbox (7.07191pt too wide) in paragraph at lines 387--387
 |\T1/qpl/m/sc/12 Positions of Responsibility$[]$| 
  []
 
@@ -656,7 +656,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  3419 strings out of 495028
  45102 string characters out of 6181497
- 108607 words of memory out of 5000000
+ 109607 words of memory out of 5000000
  6578 multiletter control sequences out of 15000+600000
  35879 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -667,7 +667,7 @@ enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texmf/fonts/type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/ty
 pe1/public/tex-gyre/qplr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplr
 i.pfb>
-Output written on mitacs.pdf (2 pages, 107021 bytes).
+Output written on mitacs.pdf (2 pages, 107446 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
